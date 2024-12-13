@@ -8,30 +8,89 @@
     <link rel="stylesheet" href="./dist/style.css">
     <link rel="stylesheet" href="./dist/stylest.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Oswald:wght@200..700&family=Outfit:wght@600&family=Parkinsans:wght@300..800&display=swap');
-        </style>
-        <!-- https://mbass.com/ -->
+        @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Geist+Mono:wght@100..900&family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Oswald:wght@200..700&family=Outfit:wght@600&family=Parkinsans:wght@300..800&display=swap');
+    </style>
+    <!-- https://mbass.com/ -->
 </head>
 
 <body>
-
-    <nav class="sticky bg-neutral-800 p-7 flex flex-row justify-between">
+    <nav class=" sticky top-0 bg-neutral-800 p-7 flex flex-row justify-between">
         <a href="#" class=""><img src="./assets/img/bender-logo-beige.svg" alt="logo_bender"></a>
-
-        <div class="flex flex-row justify-around gap-10 mx-10">
-
-            <a href="#" class="bg-slate-300 rounded-full p-1.5 px-8 hover:bg-slate-400 hover:text-white self-center customfont text-lg">
-                    <p class="font-normal">Espaces diponibles</p>
+        <div class="flex flex-row justify-around gap-7 ">
+            <a href="#" class="bg-slate-300 rounded-full p-1.5 px-8 hover:bg-slate-400 self-center karla text-lg">
+                <p class="font-normal">Espaces diponibles</p>
             </a>
-            
-        <a href="#" class="self-center text-white text-xl customfont hover:underline hover:underline-offset-4">English</a>
-        </div>
+            <a href="#"
+                class="self-center text-orange-100 text-xl karla hover:underline hover:underline-offset-4">English</a>
+
+            <div class="tham tham-e-squeeze tham-w-6 self-center">
+                <div class="tham-box">
+                    <div class="tham-inner bg-orange-100">
+                    </div>
+                </div>
+            </div>
     </nav>
 
-    <div class="h-screen bg-neutral-800">
-
+    <div class="h-screen bg-neutral-800 flex flex-row justify-between">
+        <div class="text-orange-100 mx-10 w-9/12 mt-56">
+            <h1 class="instrument text-7xl leading-[5rem]">
+                Nous sommes le <span class="italic">département immobilier </span>de nos clients
+                </p>
+                <p class="karla text-xl w-9/12 font-light mt-4">Nous sommes une agence de courtage immobilier commercial
+                    qui représente exclusivement les utilisateurs
+                    d’espaces.</p>
+        </div>
+        <div class="p-10">
+            <img src="./assets/img/bender-accueil-header-18092024.jpg" alt="reunion_collaborateurs"
+                class="imgheader rounded-lg my-5">
+        </div>
     </div>
 
+
+    <main class="bg-gray-300 py-28">
+        <div class="m-auto p-10">
+            <p class="instrument text-center w-7/12 m-auto text-5xl text-gray-800 mb-20">
+                Nous accompagnons les entreprises dans leurs projets immobiliers, qu’ils soient commerciaux ou
+                industriels, en représentant exclusivement leurs intérêts, jamais ceux des bailleurs. Nous vous
+                accompagnerons tout au long de votre projet immobilier en respectant vos objectifs et votre échéancier.
+            </p>
+        </div>
+
+        <div class="flex flex-row mx-64">
+            <div class="w-6/12">
+                <img src="./assets/img/bender-accueil-services1-18092024.jpg" alt="bureaux" class="rounded-lg">
+            </div>
+            <div class="w-6/12 flex flex-col gap-4">
+                <p class="text-lg">En tant que spécialistes de l’immobilier d’entreprise, nous nous consacrons
+                    uniquement aux
+                    entreprises locataires et propriétaires de leurs locaux. <span class="font-bold">Nous ne
+                        représentons aucun propriétaire
+                        commercial ou bailleur,</span> garantissant ainsi une approche sans conflit d’intérêt,
+                    entièrement
+                    centrée sur vos besoins. Que ce soit pour renégocier votre bail, relocaliser votre entreprise,
+                    sous-louer vos espaces, planifier et réaliser une construction sur mesure ou encore faire
+                    l’acquisition d’un édifice qui répond à vos besoins, nous vous guiderons dans votre démarche
+                    immobilière, et ce, tout en respectant vos objectifs et votre échéancier.</p>
+                <a href="#"
+                    class="mt-4 border-solid border-2 border-gray-800 px-1 py-2 rounded-full w-5/12 text-center hover:bg-gray-800 hover:text-white">Voir
+                    nos services et solutions</a>
+                <div class="mt-14">
+                    <img src="./assets/img/bender-accueil-services2-18092024.jpg" alt="reunion_collaborateurs"
+                        class="rounded-lg">
+                </div>
+            </div>
+
+    </main>
+
+
+
+    <script>
+        const tham = document.querySelector(".tham");
+
+        tham.addEventListener('click', () => {
+            tham.classList.toggle('tham-active');
+        });
+    </script>
 </body>
 
 </html>

@@ -1,7 +1,16 @@
-img{
+a>img {
     width: 16rem;
+    min-width: 12rem;
 }
 
-.customfont{
+.imgheader{
+    width: 70rem;
+}
+
+.karla {
     font-family: "Karla";
+}
+
+.instrument {
+    font-family: "Instrument Serif", serif;
 }
