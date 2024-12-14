@@ -17,11 +17,12 @@
     <nav class=" sticky top-0 bg-neutral-800 p-7 flex flex-row justify-between">
         <a href="#" class=""><img src="./assets/img/bender-logo-beige.svg" alt="logo_bender"></a>
         <div class="flex flex-row justify-around gap-7 ">
-            <a href="#" class="bg-slate-300 rounded-full p-1.5 px-8 hover:bg-slate-400 self-center karla text-lg">
+            <a href="#"
+                class="bg-slate-300 rounded-full p-1.5 px-8 hover:bg-slate-400 self-center karla text-lg max-md:hidden">
                 <p class="font-normal">Espaces diponibles</p>
             </a>
             <a href="#"
-                class="self-center text-orange-100 text-xl karla hover:underline hover:underline-offset-4">English</a>
+                class="self-center text-orange-100 text-xl karla hover:underline hover:underline-offset-4 max-sm:hidden">English</a>
 
             <div class="tham tham-e-squeeze tham-w-6 self-center">
                 <div class="tham-box">
@@ -31,8 +32,8 @@
             </div>
     </nav>
 
-    <div class="h-screen bg-neutral-800 flex flex-row justify-between">
-        <div class="text-orange-100 mx-10 w-9/12 mt-56">
+    <div class="lg:h-screen max-lg:pb-20 bg-neutral-800 flex lg:flex-row justify-between flex-col max-lg:pt-20">
+        <div class="text-orange-100 mx-10 lg:w-9/12 lg:mt-56">
             <h1 class="instrument text-7xl leading-[5rem]">
                 Nous sommes le <span class="italic">département immobilier </span>de nos clients
                 </p>
@@ -40,7 +41,7 @@
                     qui représente exclusivement les utilisateurs
                     d’espaces.</p>
         </div>
-        <div class="p-10">
+        <div class="px-10 max-lg:hidden max-xl:self-center">
             <img src="./assets/img/bender-accueil-header-18092024.jpg" alt="reunion_collaborateurs"
                 class="imgheader rounded-lg my-5">
         </div>
@@ -48,7 +49,7 @@
 
 
     <main class="bg-gray-300 py-28">
-        <div class="m-auto p-10">
+        <div class="m-auto p-10 max-lg:pt-2">
             <p class="instrument text-center w-7/12 m-auto text-5xl text-gray-800 mb-20">
                 Nous accompagnons les entreprises dans leurs projets immobiliers, qu’ils soient commerciaux ou
                 industriels, en représentant exclusivement leurs intérêts, jamais ceux des bailleurs. Nous vous
@@ -56,12 +57,12 @@
             </p>
         </div>
 
-        <div class="flex flex-row mx-64">
-            <div class="w-6/12">
+        <div class="lg:columns-2 w-8/12 mx-auto">
+            <div class="max-lg:hidden ">
                 <img src="./assets/img/bender-accueil-services1-18092024.jpg" alt="bureaux" class="rounded-lg">
             </div>
-            <div class="w-6/12 flex flex-col gap-4">
-                <p class="text-lg">En tant que spécialistes de l’immobilier d’entreprise, nous nous consacrons
+            <div class="flex flex-col justify-around">
+                <p class="">En tant que spécialistes de l’immobilier d’entreprise, nous nous consacrons
                     uniquement aux
                     entreprises locataires et propriétaires de leurs locaux. <span class="font-bold">Nous ne
                         représentons aucun propriétaire
@@ -72,14 +73,14 @@
                     l’acquisition d’un édifice qui répond à vos besoins, nous vous guiderons dans votre démarche
                     immobilière, et ce, tout en respectant vos objectifs et votre échéancier.</p>
                 <a href="#"
-                    class="mt-4 border-solid border-2 border-gray-800 px-1 py-2 rounded-full w-5/12 text-center hover:bg-gray-800 hover:text-white">Voir
+                    class=" border-solid border-2 border-gray-800 px-1 py-2 rounded-full text-center hover:bg-gray-800 hover:text-white">Voir
                     nos services et solutions</a>
-                <div class="mt-14">
+                <div class="">
                     <img src="./assets/img/bender-accueil-services2-18092024.jpg" alt="reunion_collaborateurs"
                         class="rounded-lg">
                 </div>
             </div>
-
+        </div>
     </main>
 
 
